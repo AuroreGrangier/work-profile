@@ -1,0 +1,281 @@
+html
+{
+    height: 100%;
+    position: relative;
+    margin-bottom: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+
+body
+{
+    height: 100%;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    background-size: cover;
+    background-attachment: relative;
+    overflow-y: scroll;
+    overflow-x: none;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    position: relative;
+
+} 
+
+.header
+{
+    width: 100%;
+    flex-direction: row;
+    background-color: white;
+    padding-top: -1%;
+    position: fixed;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    z-index: 1000;
+}
+
+.header .nav .ul .li
+{
+    display: inline-block;
+}
+
+header h1 /* "Aurore GRANGIER Développement web*/
+{
+    font-family: 'NimbusSansBeckerPBlaRegular', sans-serif;
+    font-size: 35px;
+    line-height: 28px;
+    text-align: center;
+    color: black;
+}
+
+
+.navi
+{
+    font-family: 'HALOT', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    margin-left: -1%;
+    margin-top: -4%;
+}
+
+.reseaux
+{
+    font-size: 18px;
+    text-align: right;
+    margin-right: 3%;
+    margin-top: -4.5%;
+    position: relative;
+}
+
+
+/* Style buttons */
+.btn
+{
+    background-color: black;
+    border: 0.5px solid black;
+    padding: 12px 16px;
+    font-size: 14px;
+    cursor: grab;
+    border-radius: 50%;
+}
+  
+/* Darker background on mouse-over */
+.btn:hover
+{
+    background-color: rgb(153, 152, 152);
+}
+
+nav ul
+{
+    display: inline-flex;
+
+}
+
+nav ul li
+{
+    list-style-type: none;
+
+}
+
+nav ul li a
+{
+    color: rgb(153, 152, 152);
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+a:hover /* liens survolés */
+{
+    color: black;
+    text-decoration: none;
+}
+
+.proposcolor
+{
+    width: 100%;
+    margin-left: 0%;
+    position: relative;
+    display: inline-block;
+    background-color: rgb(128, 208, 208);
+    padding-top: 38%; 
+}
+
+.propos
+{
+    width: 35%;
+    margin-left: 45%;
+    margin-top: -22%;
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding-left: 4.5%;
+    padding-right: 4.5%;
+    padding-top: 4%; 
+    padding-bottom: 4%;
+    margin-bottom: 12%;
+    letter-spacing: 1px;
+    z-index: 1000;
+}
+
+.experiencescolor
+{
+    width: 100%;
+    margin-left: 0%;
+    position: relative;
+    display: inline-block;
+    background-color: rgb(32, 32, 32);
+    padding-top: 38%; 
+}
+
+img
+{
+    margin-top: -27%;
+    margin-left: 10%;
+    z-index: 1000;
+    position: relative;
+}
+h2 /* ensemble des titres des sections */
+{
+    font-family: 'NimbusSansBeckerPBlaRegular', sans-serif;
+    font-size: 35px;
+    font-weight: 200;
+    line-height: 45px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+.conteneur /* ensemble des sections */
+{
+
+    min-height: 100%;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    text-align: left;
+    line-height: 160%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 17px;
+    font-size: 15px;
+
+}
+
+section /* contenu de l'ensemble des sections */
+{
+
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+.footer
+{
+    text-align: center;
+    bottom: 0;
+    z-index: 999;
+    height: auto;
+    width: 100%;
+    margin-left: 0%;
+    display: inline-flex;
+    background-color: rgb(32, 32, 32);
+    color: rgb(161, 161, 161);
+    padding-left: 4.3%;
+    padding-right: 4.3%;
+    padding-top: 4%; 
+    padding-bottom: 4%;
+}
+
+
+@font-face
+{
+    font-family: 'NimbusSansBeckerPBlaRegular';
+    src: url(font/NimbusSansBeckerPBlaRegular.otf);
+}
+
+@font-face
+{
+    font-family: 'HALOT';
+    src: url(font/HALOT.ttf);
+}
+
+@font-face
+{
+    font-family: 'AsimovProBd';
+    src: url(font/AsimovProBd.otf);
+}
+
+
+
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre est inférieure à 780px et sur tous types d'écran orientés verticalement */
+@media all and (max-width: 780px) and (orientation: portrait){
+
+    #bloc_page
+    {
+        width: auto;
+    }
+
+    #header
+    {
+        height: 50px;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    h2 h3 h4
+    {
+        font-size: 28px;
+        margin: 20px 0px 0px 0px;
+    }
+
+
+    nav li a
+    {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    nav li:hover a
+    {
+        padding: 5px 10px 10px 10px;
+    }
+
+    #conteneur
+    {
+        display: block;
+        flex-direction: column;
+        min-width: 350%;
+        overflow: auto;
+    }
+
+    h2
+    {
+        line-height: 180%;
+    }
+}
+
